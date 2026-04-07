@@ -1,3 +1,12 @@
+body{
+    font-family:"標楷體", "DFKai-SB", serif;       
+}
+
+table{
+    /* 折疊線條 */
+    border-collapse:collapse;
+}
+
 th, td{
             border: 1px solid;
             /* white-space：pre-line;是讓換行時，在網頁顯示也跟著換行 */
@@ -6,27 +15,28 @@ th, td{
             text-align: center;
             padding: 5px;
 }
-table{
-    /* 折疊線條 */
-    border-collapse:collapse;
-}
+
 .justify{
+    /* 分散對齊 */
     text-align-last: justify;
+    /* 文字左右留出空間，不會直接貼表格線 */
     padding-left: 60px;
     padding-right: 60px;
 }
 
-.a{
+.vt{
+    /* 文字垂直顯示 */
     writing-mode: vertical-lr;
 }
  
+/* 縮小標頭 -> 授課教師、時段、節次、時間的文字大小 */
 .fsize13{
     font-size: 13px;
 }
 
-body{
-    font-family:"標楷體", "DFKai-SB", serif;       
-}
+
+
+/* 調整週一～週五欄寬相同 */
 .week{
     width: 64px;
 }
