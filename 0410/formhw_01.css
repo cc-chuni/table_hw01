@@ -1,0 +1,40 @@
+body{
+    background-color:#f1ebf8 ;
+}
+form{
+    max-width: 640px;
+    margin: 0 auto;
+}
+.submitBtn{
+    background-color: #673ab7;
+    color: white;
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 36px;   
+}
+
+.card{
+    background-color: white;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 24px;
+    width: 590px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 32px;
+    line-height: 135%;
+
+}
+.description{
+    font-size: 11px;
+    line-height: 15pt;
+
+}
+.redFont{
+    color: red;
+}
