@@ -15,6 +15,12 @@ form{
     padding-right: 24px;
     height: 36px;   
 }
+/* 最頂部的第一張卡片 */
+.card.header-card{
+    border-top: 10px solid #673ab7;
+    border-top-left-radius: 8px;   /* 確保圓角對齊 */
+    border-top-right-radius: 8px;
+}
 
 .card{
     background-color: white;
@@ -27,14 +33,57 @@ form{
 }
 h1{
     font-size: 32px;
+    font-weight: 400;
     line-height: 135%;
 
 }
-.description{
-    font-size: 11px;
-    line-height: 15pt;
+label{
+    line-height: 24px;
+}
+input[type=text],[type=email]{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-size: 14px;
+    line-height: 20px;}
 
+.description{
+    font-size: 14.6667px;
+    font-weight: 400;
+    line-height: 20pt;
+    margin-top: 12px;
+
+}
+.userAccount{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(94, 94, 94);
+}
+.unSharedContnt{
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(94, 94, 94);
+}
+a.changeAccount{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgb(116, 56, 210);
+    text-decoration: underline;   
+}
+small{
+    color: rgb(117, 117, 117);
 }
 .redFont{
     color: red;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;    
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }

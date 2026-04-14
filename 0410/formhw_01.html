@@ -12,108 +12,104 @@
     <main>
         <section>
             <form action="">
-                <section class="card">
+                <section class="card header-card">
                     <div>
                         <h1>F2E02 表單練習</h1>
                         <div class="description">僅供新尖兵標單切版練習作業</div>
-                        <p>paggy881025@gmail.com</p>
-                        <p>未共享的内容</p>
+                        <span class="userAccount">paggy881025@gmail.com</span>
+                        <a href="https://accounts.google.com/v3/signin/accountchooser?continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ%2Fviewform&service=wise&flowName=GlifWebSignIn&flowEntry=AccountChooser&dsh=S50651991%3A1776173416739760" class="changeAccount">切換帳號</a>
+                        <p class="unSharedContnt">未共享的内容</p>
+                        <small>草稿已保存</small>
                         <p class="redFont">*表示必填</p>
                     </div>
                 </section>
                 <section class="card">
-                    <div>
-                        <label for="name">姓名</label>
+                    <div class="formGroup">
+                        <label for="name">
+                            姓名
+                            <span class="redFont">*</span>
+                        </label>
                         <input type="text" class="name" placeholder="您的回答" required>
                     </div>
                 </section>
                 <section class="card">
-                    <label for="">信箱</label>
-                    <div>
-                        <input type="email" placeholder="您的回答" required>
-                    </div>
-
-                </section>
-                <section class="card">
-                    <label for="">生日</label>
-                    <div>日期</div>
-                    <input type="date">
-                </section>
-                <section class="card">
-                    <label for="">想跟老師說悄悄話</label>
-                    <input type="text" placeholder="您的回答">
-
-                </section>
-                <section class="card">
-                    <label>喜歡的顏色</label>
-                    <div>
-                        <label>
-                            <input type="radio" name="color" id="yellow">黃
+                    <div class="formGroup">
+                        <label for="email">
+                            信箱
+                            <span class="redFont">*</span>
                         </label> 
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="color" id="green">綠
-                        </label>
-                    </div>
-                    <div>    
-                        <label>
-                            <input type="radio" name="color" id="red">紅
-                        </label>
+                        <input type="email" placeholder="您的回答" required class="email">   
                     </div>
                 </section>
                 <section class="card">
-                    <label>喜歡吃的飲食類型</label>
-                    <div>
+                    <div class="formGroup">
+                        <label for="bDay">生日</label> 
+                        <small>日期</small>  
+                        <input type="date" class="bDay"> 
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="formGroup">
+                        <label for="">想跟老師說悄悄話</label>
+                        <input type="text" placeholder="您的回答">
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="formGroup">
+                        <label>喜歡的顏色</label>
+                            <label>
+                                <input type="radio" name="color" id="yellow">黃
+                            </label> 
+                            <label>
+                                <input type="radio" name="color" id="green">綠
+                            </label>
+                            <label>
+                                <input type="radio" name="color" id="red">紅
+                            </label>
+                    </div>
+                </section>
+                <section class="card">
+                    <div class="formGroup">
+                        <label>喜歡吃的飲食類型</label>
                         <label>
                             <input type="checkbox" name="foodType" id="Chinese">中式
                         </label>
-                    </div>
-                    <div>
                         <label>
                             <input type="checkbox" name="foodType" id="Japanese">日式
                         </label>
-                    </div>
-                    <div>
                         <label>
                             <input type="checkbox" name="foodType" id="Italian">義式
                         </label>
-                    </div>
-                    <div>
                         <label>
                             <input type="checkbox" name="foodType" id="Korean">韓式
                         </label>
-                    </div>
-                    <div>
                         <label>
                             <input type="checkbox" name="foodType" id="American">美式
                         </label>
-                    </div>
-                    <div>
                         <label>
                             <input type="checkbox" name="foodType" id="Thai">泰式
                         </label>
                     </div>
                 </section>
                 <section class="card">
-                    <label>最想去的國家</label>
-                    <div>
-                        <select name="" id="">
-                            <option value="" disabled selected hidden>選擇</option>
-                            <optgroup label="亞洲">
-                                <option value="Japan">日本</option>
-                                <option value="Korea">韓國</option>
-                                <option value="Thailand">泰國</option>
-                            </optgroup>
-                            <optgroup label="歐洲">
-                                <option value="Germany">德國</option>
-                                <option value="UK">英國</option>
-                            </optgroup>
-                            <optgroup label="美洲">
-                                <option value="Canada">加拿大</option>
-                                <option value="USA">美國</option>
-                            </optgroup>
-                        </select>
+                    <div class="formGroup">
+                        <label>最想去的國家</label>
+                            <select name="" id="">
+                                <option value="" disabled selected hidden>選擇</option>
+                                <optgroup label="亞洲">
+                                    <option value="Japan">日本</option>
+                                    <option value="Korea">韓國</option>
+                                    <option value="Thailand">泰國</option>
+                                </optgroup>
+                                <optgroup label="歐洲">
+                                    <option value="Germany">德國</option>
+                                    <option value="UK">英國</option>
+                                </optgroup>
+                                <optgroup label="美洲">
+                                    <option value="Canada">加拿大</option>
+                                    <option value="USA">美國</option>
+                                </optgroup>
+                            </select>
                     </div>
                 </section>
                 <section>
@@ -125,11 +121,11 @@
     </main>
     <footer>
         <p>
-            <div>切勿通过 Google 表单提交密码。</div>
-            <div>此表单是在 五倍紅寶石程式資訊教育股份有限公司 内部创建的。</div>
-            <a href="">聯繫表單所有者</a>
-            <p>此表单看起来很可疑吗？</p>
-            <a href="https://drive.google.com/u/0/abuse?id=AKkXjoydXWY0mgYIjdBkcdDZLucty17BSF7IBJtYLVLaa39SegSoJEHHs-07XbfRApdQoJAK6ILK0OitJ556aac:0&docurl=https://docs.google.com/forms/d/e/1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ/viewform">報告</a>
+            <small class="column">切勿通过 Google 表单提交密码。</small>
+            <small class="column">此表单是在 五倍紅寶石程式資訊教育股份有限公司 内部创建的。</small>
+            <small><a href="">聯繫表單所有者</a></small>
+            <small>此表单看起来很可疑吗？</small>
+            <small><a href="https://drive.google.com/u/0/abuse?id=AKkXjoydXWY0mgYIjdBkcdDZLucty17BSF7IBJtYLVLaa39SegSoJEHHs-07XbfRApdQoJAK6ILK0OitJ556aac:0&docurl=https://docs.google.com/forms/d/e/1FAIpQLSeRMAUDqY6GEPiHotfXZQLvGOQgB1nLfxA_TW-uwlC5vb8CWQ/viewform">報告</a></small>
             <div>
                 <a href="https://workspace.google.com/products/forms/?utm_source=product&utm_medium=forms_logo&utm_campaign=forms">Goole 表單</a>
             </div>
